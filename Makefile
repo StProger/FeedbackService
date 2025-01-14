@@ -44,7 +44,7 @@ migrate:
 
 .PHONY: migrations
 migrations:
-	${EXEC} ${APP_CONTAINER} ${MANAGEPY} make migrations
+	${EXEC} ${APP_CONTAINER} ${MANAGEPY} makemigrations
 
 
 .PHONY: superuser
