@@ -18,6 +18,9 @@ class Product(TimedBaseModel):
         default=True,
     )
 
+    def __str__(self):
+        return self.title
+
     class Meta:
         verbose_name = 'Товар'
         verbose_name_plural = 'Товары'
